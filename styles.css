@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto+Mono&display=swap");
+:root {
+  --primary-color: #eff6ff;
+  --secondary-color: #3b82f6;
+}
+* {
+  margin: 0;
+  background-color: var(--primary-color);
+}
+#quote {
+  font-family: "Pattaya", sans-serif;
+}
+.container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "navbar-logo navbar-logo"
+    "navbar welcome-name";
+}
+#myname {
+  font-size: 3rem;
+}
+#navbar-logo {
+  grid-area: navbar-logo;
+  display: flex;
+  padding: 1.5rem 0.5rem;
+  justify-content: space-between;
+}
+#navbar {
+  grid-area: navbar;
+}
+.navbar-links {
+  display: flex;
+  padding: 0.4rem;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+}
+.navbar-item {
+  margin: 1rem 0;
+}
+#welcome-name {
+  grid-area: welcome-name;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+#welcome-name #name {
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto Mono", monospace;
+}
