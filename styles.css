@@ -9,7 +9,12 @@
   margin: 0;
   background-color: var(--primary-color);
 }
+h2,
+h3 {
+  font-family: "Roboto Mono", monospace;
+}
 #quote {
+  color: var(--secondary-color);
   font-family: "Pattaya", sans-serif;
 }
 .container {
@@ -18,10 +23,12 @@
   grid-template-columns: 1fr;
   grid-template-areas:
     "navbar-logo navbar-logo"
-    "navbar welcome-name";
+    "navbar welcome-name"
+    "skills skills";
 }
 #myname {
-  font-size: 3rem;
+  font-size: 4rem;
+  color: var(--secondary-color);
 }
 #navbar-logo {
   grid-area: navbar-logo;
@@ -43,6 +50,13 @@
 .navbar-item {
   margin: 1rem 0;
 }
+.navbar-item .link {
+  text-decoration: none;
+}
+.navbar-item .link:hover {
+  border-bottom: 3px solid var(--secondary-color);
+}
+
 #welcome-name {
   grid-area: welcome-name;
   display: flex;
