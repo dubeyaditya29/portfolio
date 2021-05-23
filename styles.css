@@ -9,6 +9,7 @@
   margin: 0;
   background-color: var(--primary-color);
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -27,7 +28,9 @@ h3 {
     "navbar-logo navbar-logo"
     "navbar welcome-name"
     ".. skills"
-    ".. projects";
+    ".. projects"
+    ".. blogs"
+    ".. connect";
 }
 #myname {
   font-size: 4rem;
@@ -114,3 +117,18 @@ h3 {
 /**Blog**/
 
 /**Connect**/
+
+#connect {
+  grid-area: connect;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.list {
+  list-style: none;
+}
+.connect-list {
+  display: flex;
+  margin: 0.5rem;
+}
