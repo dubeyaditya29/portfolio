@@ -8,7 +8,9 @@
 * {
   margin: 0;
   background-color: var(--primary-color);
+  box-sizing: border-box;
 }
+h1,
 h2,
 h3 {
   font-family: "Roboto Mono", monospace;
@@ -24,7 +26,8 @@ h3 {
   grid-template-areas:
     "navbar-logo navbar-logo"
     "navbar welcome-name"
-    "skills skills";
+    ".. skills"
+    ".. projects";
 }
 #myname {
   font-size: 4rem;
@@ -68,3 +71,46 @@ h3 {
   flex-direction: row;
   font-family: "Roboto Mono", monospace;
 }
+/**Skills**/
+
+#skills {
+  grid-area: skills;
+  padding: 3rem;
+}
+.skill-head {
+  display: flex;
+  justify-content: center;
+}
+.skill-set {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 4rem;
+}
+.skill-img {
+  display: flex;
+  max-width: 100px;
+  flex-grow: 1;
+  gap: 2rem;
+}
+
+/**Projects**/
+
+#projects {
+  grid-area: projects;
+  padding: 3rem;
+}
+.project-set {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 4rem;
+}
+.project-head {
+  display: flex;
+  justify-content: center;
+}
+
+/**Blog**/
+
+/**Connect**/
