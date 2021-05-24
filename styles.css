@@ -101,17 +101,26 @@ h3 {
 
 #projects {
   grid-area: projects;
-  padding: 3rem;
-}
-.project-set {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  gap: 4rem;
+  align-items: center;
+  gap: 2rem;
 }
-.project-head {
+
+.proj-btn {
   display: flex;
-  justify-content: center;
+  margin: 4rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: "Roboto Mono", monospace;
+  box-shadow: 0.5rem 0.5rem #3b82f6;
+}
+.proj-btn:hover {
+  border-color: var(--secondary-color);
+}
+.li {
+  list-style: none;
+  text-decoration: none;
 }
 
 /**Blog**/
@@ -131,4 +140,5 @@ h3 {
 .connect-list {
   display: flex;
   margin: 0.5rem;
+  padding: 0;
 }
