@@ -25,12 +25,12 @@ h3 {
   grid-gap: 2rem;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "navbar-logo navbar-logo"
-    "navbar welcome-name"
-    ".. skills"
-    ".. projects"
-    ".. blogs"
-    ".. connect";
+    "navbar-logo navbar"
+    "welcome-name .."
+    "skills .."
+    "projects .."
+    "blogs .."
+    "connect ..";
 }
 #myname {
   font-size: 4rem;
@@ -39,8 +39,8 @@ h3 {
 #navbar-logo {
   grid-area: navbar-logo;
   display: flex;
-  padding: 1.5rem 0.5rem;
   justify-content: space-between;
+  padding: 1.5rem 0.5rem;
 }
 #navbar {
   grid-area: navbar;
@@ -48,8 +48,9 @@ h3 {
 .navbar-links {
   display: flex;
   padding: 0.4rem;
-  flex-direction: column;
+  flex-direction: row;
   text-decoration: none;
+  gap: 2rem;
   list-style: none;
   font-family: "Roboto Mono", monospace;
 }
@@ -106,11 +107,16 @@ h3 {
   align-items: center;
   gap: 2rem;
 }
-
+.project-head {
+  display: flex;
+  justify-content: center;
+}
 .proj-btn {
   display: flex;
-  margin: 4rem;
-  padding: 0.5rem;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 20px;
   border-radius: 0.5rem;
   font-family: "Roboto Mono", monospace;
   box-shadow: 0.5rem 0.5rem #3b82f6;
@@ -141,4 +147,22 @@ h3 {
   display: flex;
   margin: 0.5rem;
   padding: 0;
+}
+
+/**Media Queries for mobile max-width 450px**/
+
+@media (max-width: 450px) {
+  #welcome-name {
+    display: block;
+    width: 100%;
+  }
+  h1,
+  p,
+  h2,
+  h3 {
+    font-size: 50px;
+  }
+  ul {
+    font-size: x-large;
+  }
 }
