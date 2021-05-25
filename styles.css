@@ -151,7 +151,7 @@ h3 {
 
 /**Media Queries for mobile max-width 450px**/
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   #welcome-name {
     display: block;
     width: 100%;
