@@ -134,32 +134,6 @@ h3 {
 
 /**Blog**/
 
-.container {
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 8%;
-}
-.blog-list {
-  width: 700px;
-}
-.blog-list__link {
-  display: block;
-  font-size: 27px;
-  cursor: pointer;
-  color: var(--secondary-color);
-  margin-bottom: 0.5rem;
-  text-decoration: none;
-}
-.blog-list__paragraph {
-  margin-bottom: 2rem;
-}
-.blog-list__date {
-  margin-bottom: 0.5rem;
-}
-hr {
-  height: 0;
-  width: 60%;
-}
 /**Connect**/
 
 #connect {
