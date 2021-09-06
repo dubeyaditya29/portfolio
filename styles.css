@@ -84,18 +84,23 @@ h3 {
 .skill-head {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
+
 .skill-set {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   gap: 4rem;
 }
 .skill-img {
-  display: flex;
+  /* display: flex;
   max-width: 100px;
-  flex-grow: 1;
-  gap: 2rem;
+  align-items: center;
+  margin-left: 24%; */
+  max-width: 100px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 30%;
+}
+.picture {
 }
 
 /**Projects**/
@@ -164,5 +169,23 @@ h3 {
   }
   ul {
     font-size: x-large;
+  }
+}
+@media (max-width: 768px) {
+  #welcome-name {
+    display: block;
+    width: 100%;
+  }
+  h1,
+  p,
+  h2,
+  h3 {
+    font-size: 50px;
+  }
+  ul {
+    font-size: x-large;
+  }
+  .skill-img {
+    margin-left: 15%;
   }
 }
