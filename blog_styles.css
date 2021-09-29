@@ -35,6 +35,26 @@ hr {
   height: 0;
   width: 60%;
 }
+#project_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+h3 {
+  color: var(--secondary-color);
+}
+.project_items_buttons {
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 10%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  margin-right: 10px;
+}
+.project_items_buttons:hover {
+  font-weight: 500;
+}
 @media (max-width: 768px) {
   .blog-list {
     display: flex;
