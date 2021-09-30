@@ -44,6 +44,21 @@ p {
 .area {
   margin: 2%;
 }
+#connect {
+  grid-area: connect;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.list {
+  list-style: none;
+}
+.connect-list {
+  display: flex;
+  margin: 0.5rem;
+  padding: 0;
+}
 @media (max-width: 768px) {
   #blog-fig {
     margin-left: auto;
