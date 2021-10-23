@@ -65,10 +65,12 @@ h3 {
   border-bottom: 3px solid var(--secondary-color);
 }
 .special_item {
+  display: flex;
   color: pink;
   font-weight: 700;
   border: 2px solid var(--secondary-color);
   padding: 2px 3px;
+  overflow-wrap: break-word;
 }
 
 #welcome-name {
