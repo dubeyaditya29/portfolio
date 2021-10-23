@@ -32,6 +32,7 @@ h3 {
     "blogs .."
     "connect ..";
 }
+
 #myname {
   font-size: 4rem;
   color: var(--secondary-color);
@@ -62,6 +63,12 @@ h3 {
 }
 .navbar-item .link:hover {
   border-bottom: 3px solid var(--secondary-color);
+}
+.special_item {
+  color: pink;
+  font-weight: 700;
+  border: 2px solid var(--secondary-color);
+  padding: 2px 3px;
 }
 
 #welcome-name {
